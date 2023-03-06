@@ -1,0 +1,128 @@
+$maroon_color:rgba(171, 68, 68, 0.929);
+$size:50px;
+$background_image:url('lib.png');
+$text_border: -1px -1px 0 rgb(74, 44, 44),1px -1px 0 white,-1px 1px 0 blueviolet,1px 1px 0 white;
+$text_border_input: -2px -1px 0 rgb(31, 29, 29),2px -1px 0 white,-1px 1px 0 rgb(15, 15, 16),1px 1px 0 white;
+$font_family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+$primary-color:blue;
+$secondary-color:green;
+
+
+.h1{
+    color:$maroon_color;
+    text-align: center;
+    font-size: $size;
+    font-size: 60px; // Set font size
+    font-weight: bold; // Set font weight
+    padding: 5px; 
+    font-family: $font_family;
+    text-shadow: $text_border;
+    background-color: rgba(224, 218, 208,0.5);
+    border-color: rgb(247, 245, 240);
+    border-radius: 15px;
+    border-width: 5px;
+    border-style: groove;
+    font-style: bold;
+}
+.input
+{
+    display: flex;
+    text-align: center; 
+    width: 600px;
+    height: 320px;
+    font-weight: bold;
+    color:grey;
+    font-size: 40px;
+    font-style: bold;
+    font-family:$font_family;
+    display: block;
+    text-shadow: $text_border_input;
+    align-items: center;
+    background-color:rgba(222, 184, 135,0.5);
+    border-radius: 15px;
+    border-width: 2px;
+    border-style: inset;
+    margin-left: 10%;
+
+    input[type="text"] 
+    {
+            padding: 30px;
+            border: 1px solid rgb(35, 30, 23);
+            border-radius: 10px;
+            top: -20;
+            align-items: center;
+            text-align: center;
+            color: rgb(70, 55, 36);
+          
+    }
+    .boy {
+        img 
+        {
+            position: absolute; /* set the position property of the image to absolute */
+            top: 25%; /* set the top property of the image to 0 */
+            right: 0; /* set the right property of the image to 0 */
+            max-width: 35%; /* set the maximum width of the image to 100% */
+        }
+    }
+
+}
+
+.body_container 
+{
+    background-image: $background_image;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+   
+
+}
+
+button 
+{
+    background-color: #594caf;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    align-items: center;
+    padding: 10px 20px; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+    border: none;
+    font-weight: bold;
+    margin-left: -30%;
+}
+// button:hover
+// {
+//     background-color: #45a518; 
+//     font-size: 26px;
+//     font-weight: bold;
+// }
+.button_container
+{
+    text-align: center;
+    border-color:burlywood ;
+}
+.button_container:active{
+        @if background-color ==  #594caf 
+        {
+            background-color:darkmagenta;
+            color: yellow;
+            font-size: 26px;
+            font-weight: bold;
+        } 
+        @else
+        {      
+        background-color:  #594caf;
+        color: green; 
+        }
+    }
+
+
+  
+
+  
+
+  
